@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:jessie-slim
 MAINTAINER TLM Container <container at txtsme dot com>
 
 ### Environment Variables
@@ -13,7 +13,7 @@ MAINTAINER TLM Container <container at txtsme dot com>
        apt-get -y dist-upgrade && \
 
 # Install LemonLDAP::NG repo
-       apt-get -y install apt-transport-https && \
+       apt-get -y install apt-transport-https  && \
        curl https://lemonldap-ng.org/_media/rpm-gpg-key-ow2 | apt-key add - && \
        echo "deb https://lemonldap-ng.org/deb stable main" > /etc/apt/sources.list.d/lemonldap-ng.list && \
        echo "deb-src https://lemonldap-ng.org/deb stable main" >> /etc/apt/sources.list.d/lemonldap-ng.list && \
