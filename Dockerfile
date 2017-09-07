@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:jessie
 MAINTAINER TLM Container <container at txtsme dot com>
 
 ### Environment Variables
