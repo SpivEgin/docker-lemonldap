@@ -1,5 +1,5 @@
-FROM tiredofit/debian:jessie
-MAINTAINER Dave Conroy <dave at tiredofit dot ca>
+FROM debian:jessie-slim
+MAINTAINER TLM Container <container at txtsme dot com>
 
 ### Environment Variables
    ENV PORTAL_HOSTNAME=sso.example.com \
